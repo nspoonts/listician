@@ -1,4 +1,4 @@
 listician
 =========
 
-List tracking application
+List tracking application with cool new features
