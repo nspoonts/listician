@@ -68,6 +68,7 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+.metadata/*
 
 # Ignore other unneeded files.
 doc/
