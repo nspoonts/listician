@@ -1,13 +1,19 @@
 Listician::Application.routes.draw do
+  resources :email_addresses
+  resources :email
+
+  #get "email/signup"
+  match 'signup',  to: 'email#new'
+
   resources :microposts
 
   resources :users
 
   get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
-  get "static_pages/contact"
 
+  match '/contact', to: 'static_pages#contact'
+  match '/help', to: 'static_pages#help'
+  match '/about', to: 'static_pages#about'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -57,7 +63,7 @@ Listician::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'email#signup'
 
   # See how all your routes lay out with "rake routes"
 

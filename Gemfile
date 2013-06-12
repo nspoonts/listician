@@ -6,7 +6,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
-gem 'pg', '0.12.2'
+gem 'pg' #, '0.12.2'
 
 #group :development, :test do
 #  gem 'sqlite3', '1.3.5'
@@ -27,6 +27,7 @@ group :test, :development do
   gem 'guard-rspec', '0.5.5'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
+  gem 'annotate', '2.5.0'
 end
 
 group :test do
