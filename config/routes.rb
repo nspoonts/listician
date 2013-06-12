@@ -1,9 +1,8 @@
 Listician::Application.routes.draw do
   resources :email_addresses
-  resources :email
 
   #get "email/signup"
-  match 'signup',  to: 'email#new'
+  match 'signup',  to: 'email_addresses#new'
 
   resources :microposts
 
@@ -63,7 +62,7 @@ Listician::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'email#new'
+  root :to => 'email_addresses#new'
 
   # See how all your routes lay out with "rake routes"
 
