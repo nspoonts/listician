@@ -9,9 +9,9 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem 'pg' #, '0.12.2'
 gem 'newrelic_rpm'
 
-#group :development, :test do
-#  gem 'sqlite3', '1.3.5'
-#end
+group :development do
+  gem 'sqlite3', '1.3.5'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,6 +19,8 @@ group :assets do
   gem 'sass-rails',   '3.2.4'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
+  gem 'compass-rails' # you need this or you get an err
+  gem 'zurb-foundation', '~> 4.0.0'
 end
 
 gem 'jquery-rails', '2.1.3'

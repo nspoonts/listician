@@ -10,12 +10,15 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-<!--    <%= f.label :email %><br /> -->
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Sign up", class: "btn btn-large btn-primary" %>
+  <div class="row collapse">
+  	<div class="field small-12 columns">
+  		<%= f.label :email, "Sign up for our beta <span>and be the first to try it</span>".html_safe %>
+	    <div class="small-9 columns">
+	      <%= f.text_field :email, :placeholder => "Email Address" %>
+	    </div>
+	    <div class="small-3 columns">
+	      <%= f.submit "Sign up", class: "button postfix radius" %>
+	    </div>
+   </div>
   </div>
 <% end %>

@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+@import "foundation";
+@import "colors";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/images";
+
+@import url("//hello.myfonts.net/count/27c602");
+@font-face {font-family: 'BoxedLight';src: url('27C602_0_0.eot');src: url('27C602_0_0.eot?#iefix') format('embedded-opentype'),url('27C602_0_0.woff') format('woff'),url('27C602_0_0.ttf') format('truetype');}
+@font-face {font-family: 'BoxedBook';src: url('27C602_1_0.eot');src: url('27C602_1_0.eot?#iefix') format('embedded-opentype'),url('27C602_1_0.woff') format('woff'),url('27C602_1_0.ttf') format('truetype');}
+
+#content-container {
+  @include background(linear-gradient(#FFF, #FFF 70%, #F3F6F8));
+}
+#beta-sign-up-container {
+  @include background(image-url("badrobot.png/"));
+  background-position: -85px 5px;
+  background-repeat: no-repeat;
+}
+#sign-up-container {
+  margin-right: 0.625em;
+  padding: 1.5em 0em; 
+  text-align: center;
+  vertical-align: middle;
+}
+#sign-up-container .logo {
+  margin: 0px auto;
+  width: 150px;
+}
+#sign-up-container h4 {
+  text-align: center;
+  margin: 0px auto;
+  width: 60%;
+  padding: 0.625em 0 2.083em 0; 
+}
+#sign-up-container form { 
+    margin: 2.5em 0 0 1em;
+    padding-right: 0.833em;
+    width: 180px;
+}
+#sign-up-container form .field {
+  text-align: left;
+}
+#sign-up-container form .field label {
+  color: $headerText;
+}
+#sign-up-container form .field label span {
+  display: none;
+}
+#sign-up-container form .field input[type=text] {
+  border-color: $brandSecondary;
+  @include border-radius(5px 0 0 5px);
+  border-right: 0px none;
+}
+#sign-up-container form .field input,
+#sign-up-container form .field .button {
+  height: 3.33em;
+}
+#sign-up-container form .button {
+  -webkit-appearance:none;
+  line-height: 2.667em;
+  @include box-shadow(none);
+  min-width: 5.556em; 
+  margin-left: -1px;
+  background-color: $brandSecondary;
+  border-color: $brandSecondary;
+}
+
+@media screen and (min-width: 30em)  {
+  #content-container {
+    padding-top: 1.25em;
+    min-height: 520px;
+  }
+  #beta-sign-up-container {
+    background-position: -50px 0px;
+  }
+  #sign-up-container {
+    padding: 3.75em 0em; 
+  }
+  #sign-up-container .logo {
+    margin: 0px auto;
+    width: 200px;
+  }
+  #beta-sign-up-container h4 {
+    font-size: 1.5em;
+    padding: 1.667em 0 0 0;
+  }
+  #sign-up-container form {
+    width: 70%; 
+    margin: 1.667em auto;
+  }
+}
+
+@media screen and (min-width: 42em) {
+  #beta-sign-up-container {
+    @include background(image-url("badrobot_lg.png"));
+    background-repeat: no-repeat;
+    background-position: 5% -10px;
+    min-height: 680px;
+  }
+  #sign-up-container h4 {
+    width: 90%;
+    font-size: 1.5em;
+    
+  }
+  #sign-up-container .logo {
+    width: 250px;
+  }
+  #sign-up-container form {
+    width: 70%; 
+    margin: 3.33em auto;
+  }
+  #sign-up-container form .field label {
+    color: $headerText;
+    line-height: 1.2em;
+  }
+  #sign-up-container form .field label span {
+    display: inline;
+  }
+  #sign-up-container form .field input,
+  #sign-up-container form .field .button {
+    font-size: 1.125em;
+    height: 2.778em;
+  }
+  #sign-up-container form .field .button {
+    line-height: 2.667em;
+    min-width: 5.556em; 
+  }
+}
+

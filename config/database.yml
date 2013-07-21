@@ -4,10 +4,10 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: postgresql
-  database: listician_dev
-  username: listician_user
-  password: lspw
+  adapter: sqlite3
+  database: db/listician_dev.sqlite3
+  #username: listician_user
+  #password: lspw
   pool: 5
   timeout: 5000
 
