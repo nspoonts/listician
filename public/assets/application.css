@@ -5576,53 +5576,54 @@ table tfoot tr td {
   background: url(/assets/badrobot.png/);
   background-position: -85px 5px;
   background-repeat: no-repeat;
+  min-height: 480px;
 }
 
-/* line 32, ../../app/assets/stylesheets/application.scss */
+/* line 33, ../../app/assets/stylesheets/application.scss */
 #sign-up-container {
-  margin-right: 0.625em;
+  margin-left: 22%;
   padding: 1.5em 0em;
   text-align: center;
   vertical-align: middle;
 }
 
-/* line 38, ../../app/assets/stylesheets/application.scss */
+/* line 39, ../../app/assets/stylesheets/application.scss */
 #sign-up-container .logo {
   margin: 0px auto;
   width: 150px;
 }
 
-/* line 42, ../../app/assets/stylesheets/application.scss */
+/* line 43, ../../app/assets/stylesheets/application.scss */
 #sign-up-container h4 {
   text-align: center;
   margin: 0px auto;
-  width: 60%;
+  width: 90%;
   padding: 0.625em 0 2.083em 0;
 }
 
-/* line 48, ../../app/assets/stylesheets/application.scss */
+/* line 49, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form {
-  margin: 2.5em 0 0 1em;
-  padding-right: 0.833em;
-  width: 180px;
+  margin: 2.5em auto;
+  padding: 0 1.25em 0 0;
+  width: 200px;
 }
 
-/* line 53, ../../app/assets/stylesheets/application.scss */
+/* line 54, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .field {
   text-align: left;
 }
 
-/* line 56, ../../app/assets/stylesheets/application.scss */
+/* line 57, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .field label {
   color: #737480;
 }
 
-/* line 59, ../../app/assets/stylesheets/application.scss */
+/* line 60, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .field label span {
   display: none;
 }
 
-/* line 62, ../../app/assets/stylesheets/application.scss */
+/* line 63, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .field input[type=text] {
   border-color: #535462;
   -webkit-border-radius: 5px 0 0 5px;
@@ -5633,13 +5634,13 @@ table tfoot tr td {
   border-right: 0px none;
 }
 
-/* line 68, ../../app/assets/stylesheets/application.scss */
+/* line 69, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .field input,
 #sign-up-container form .field .button {
   height: 3.33em;
 }
 
-/* line 71, ../../app/assets/stylesheets/application.scss */
+/* line 72, ../../app/assets/stylesheets/application.scss */
 #sign-up-container form .button {
   -webkit-appearance: none;
   line-height: 2.667em;
@@ -5653,42 +5654,38 @@ table tfoot tr td {
 }
 
 @media screen and (min-width: 30em) {
-  /* line 82, ../../app/assets/stylesheets/application.scss */
-  #content-container {
-    padding-top: 1.25em;
-    min-height: 520px;
-  }
-
-  /* line 86, ../../app/assets/stylesheets/application.scss */
+  /* line 83, ../../app/assets/stylesheets/application.scss */
   #beta-sign-up-container {
     background-position: -50px 0px;
   }
 
-  /* line 89, ../../app/assets/stylesheets/application.scss */
+  /* line 86, ../../app/assets/stylesheets/application.scss */
   #sign-up-container {
+    margin-left: 27%;
     padding: 3.75em 0em;
   }
 
-  /* line 92, ../../app/assets/stylesheets/application.scss */
+  /* line 90, ../../app/assets/stylesheets/application.scss */
   #sign-up-container .logo {
     margin: 0px auto;
     width: 200px;
   }
 
-  /* line 96, ../../app/assets/stylesheets/application.scss */
+  /* line 94, ../../app/assets/stylesheets/application.scss */
   #beta-sign-up-container h4 {
     font-size: 1.5em;
+    width: 60%;
     padding: 1.667em 0 0 0;
   }
 
-  /* line 100, ../../app/assets/stylesheets/application.scss */
+  /* line 99, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form {
     width: 70%;
     margin: 1.667em auto;
   }
 }
-@media screen and (min-width: 42em) {
-  /* line 107, ../../app/assets/stylesheets/application.scss */
+@media screen and (min-width: 48em) {
+  /* line 106, ../../app/assets/stylesheets/application.scss */
   #beta-sign-up-container {
     background: url(/assets/badrobot_lg.png);
     background-repeat: no-repeat;
@@ -5696,42 +5693,47 @@ table tfoot tr td {
     min-height: 680px;
   }
 
-  /* line 113, ../../app/assets/stylesheets/application.scss */
+  /* line 112, ../../app/assets/stylesheets/application.scss */
+  #sign-up-container {
+    margin-left: 33%;
+  }
+
+  /* line 115, ../../app/assets/stylesheets/application.scss */
   #sign-up-container h4 {
     width: 90%;
     font-size: 1.5em;
   }
 
-  /* line 118, ../../app/assets/stylesheets/application.scss */
+  /* line 119, ../../app/assets/stylesheets/application.scss */
   #sign-up-container .logo {
     width: 250px;
   }
 
-  /* line 121, ../../app/assets/stylesheets/application.scss */
+  /* line 122, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form {
     width: 70%;
     margin: 3.33em auto;
   }
 
-  /* line 125, ../../app/assets/stylesheets/application.scss */
+  /* line 126, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form .field label {
     color: #737480;
     line-height: 1.2em;
   }
 
-  /* line 129, ../../app/assets/stylesheets/application.scss */
+  /* line 130, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form .field label span {
     display: inline;
   }
 
-  /* line 133, ../../app/assets/stylesheets/application.scss */
+  /* line 134, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form .field input,
   #sign-up-container form .field .button {
     font-size: 1.125em;
     height: 2.778em;
   }
 
-  /* line 137, ../../app/assets/stylesheets/application.scss */
+  /* line 138, ../../app/assets/stylesheets/application.scss */
   #sign-up-container form .field .button {
     line-height: 2.667em;
     min-width: 5.556em;

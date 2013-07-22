@@ -28,9 +28,10 @@
   @include background(image-url("badrobot.png/"));
   background-position: -85px 5px;
   background-repeat: no-repeat;
+  min-height: 480px;
 }
 #sign-up-container {
-  margin-right: 0.625em;
+  margin-left: 22%;
   padding: 1.5em 0em; 
   text-align: center;
   vertical-align: middle;
@@ -42,13 +43,13 @@
 #sign-up-container h4 {
   text-align: center;
   margin: 0px auto;
-  width: 60%;
+  width: 90%;
   padding: 0.625em 0 2.083em 0; 
 }
 #sign-up-container form { 
-    margin: 2.5em 0 0 1em;
-    padding-right: 0.833em;
-    width: 180px;
+    margin: 2.5em auto;
+    padding: 0 1.25em 0 0;
+    width: 200px;
 }
 #sign-up-container form .field {
   text-align: left;
@@ -79,14 +80,11 @@
 }
 
 @media screen and (min-width: 30em)  {
-  #content-container {
-    padding-top: 1.25em;
-    min-height: 520px;
-  }
   #beta-sign-up-container {
     background-position: -50px 0px;
   }
   #sign-up-container {
+    margin-left: 27%;
     padding: 3.75em 0em; 
   }
   #sign-up-container .logo {
@@ -95,6 +93,7 @@
   }
   #beta-sign-up-container h4 {
     font-size: 1.5em;
+    width: 60%;
     padding: 1.667em 0 0 0;
   }
   #sign-up-container form {
@@ -103,17 +102,19 @@
   }
 }
 
-@media screen and (min-width: 42em) {
+@media screen and (min-width: 48em) {
   #beta-sign-up-container {
     @include background(image-url("badrobot_lg.png"));
     background-repeat: no-repeat;
     background-position: 5% -10px;
     min-height: 680px;
   }
+  #sign-up-container {
+    margin-left: 33%;
+  }
   #sign-up-container h4 {
     width: 90%;
     font-size: 1.5em;
-    
   }
   #sign-up-container .logo {
     width: 250px;
