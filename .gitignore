@@ -68,7 +68,10 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-.metadata/*
+.metadata/.log
+.metadata/.plugins/org.python.pydev/
+.metadata/.plugins/org.eclipse.ui.ide/
+.metadata/.plugins/org.eclipse.debug.ui/
 
 # Ignore other unneeded files.
 doc/
